@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>pmec.com</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+</head>
+<body>
+    <section id="banner">
+        <img id="logo" src="image/pmec_lg.png">
+        <div class="banner-text">
+            <h1>PARALA MAHARAJA ENGINEERING COLLEGE</h1>
+            <p>A CONSTITUENT COLLEGE OF B.P.U.T GOVT. OF ODISHA</p>
+            <div class="banner-btn">
+                <a href="https://pmecedugrievance.orell.com/Home/Login?userType=Admin"><span></span><b>ADMISTRATOR</b></a>
+                <a href="https://pmecedugrievance.orell.com/Home/Login?userType=Student"><span></span><b>STUDENT</b></a>
+            </div>
+        </div>
+        
+    </section>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="pmec_home.html">ABOUT</a></li>
+                <li><a href="https://www.pmec.ac.in/index.php/notices/academic-notices">NOTICE</a></li>
+                <li><a href="#">ADMISSION</a></li>
+                <li><a href="https://www.pmec.ac.in/index.php/gallery">GALLERY</a></li>
+                <li><a href="https://www.pmec.ac.in/index.php/more-jobs">CARRER</a></li>
+                <li><a href="https://www.pmec.ac.in/index.php/contact-us">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="image/menu.png">
+    </div>
+    <section id="pmec">
+        <div class="title-text">
+            <p>pmec</p>
+        </div>
+    </section>
+    <script>
+        var menubtn=document.getElementById("menubtn")
+        var sidenav=document.getElementById("sidenav")
+        var menu=document.getElementById("menu")
+        
+        sidenav.style.right="-250px"
+
+        menubtn.onclick=function(){
+            if(sidenav.style.right=="-250px"){
+                 sidenav.style.right="0";
+                 menu.src="image/close.png";
+                 
+        }
+        else{
+                sidenav.style.right="-250px";
+                menu.src ="image/menu.png";
+            }
+        }
+    </script>
+</body>
+
+</html>
